@@ -13,6 +13,7 @@ var mountFolder = function (connect, dir) {
 
 module.exports = function (grunt) {
     require('load-grunt-tasks')(grunt, {config: 'package.json'});
+    grunt.loadNpmTasks('assemble');
     require('time-grunt')(grunt);
 
     var socaConfig = {
@@ -34,12 +35,17 @@ module.exports = function (grunt) {
                 files: ['app/src/sass/{,*/}*.{scss,sass}'],
                 tasks: ['compass:server']
             },
+            assemble: {
+                files: ['app/layouts/*.hbs', 'app/pages/*.hbs'],
+                tasks: ['assemble']
+            },
             livereload: {
                 options: {
                     livereload: LIVERELOAD_PORT
                 },
                 files: [
-                    'app/*.html',
+                    'app/layouts/*.hbs',
+                    'app/pages/*.hbs',
                     'app/css/{,*/}*.css',
                     'app/src/sass/{,*/}*.{scss,sass}',
                     'app/src/coffee/{,*/}*.coffee',
@@ -167,6 +173,17 @@ module.exports = function (grunt) {
                     ]
                 }
             }
+        },
+        assemble: {
+            options: {
+                layout: "app/layouts/default.hbs",
+                flatten: true
+            },
+            pages: {
+                files: {
+                    'app/': ['app/pages/*.hbs']
+                }
+            }
         }
     });
 
@@ -174,6 +191,7 @@ module.exports = function (grunt) {
         grunt.task.run([
             'clean:server',
             'concurrent:server',
+            'assemble',
             'connect:livereload',
             'open',
             'watch'
