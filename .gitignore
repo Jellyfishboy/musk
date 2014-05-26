@@ -1,6 +1,7 @@
 app/components/*
 node_modules
 app/css/*
+app/js/application.js
 .sass-cache
 dist
 app/*.html

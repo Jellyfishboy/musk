@@ -24,10 +24,6 @@ module.exports = function (grunt) {
     grunt.initConfig({
         soca: socaConfig,
         watch: {
-            coffee: {
-                files: ['app/src/coffee/{,*/}*.coffee'],
-                tasks: ['coffee:server']
-            },
             options: {
                 nospawn: true
             },
@@ -48,7 +44,6 @@ module.exports = function (grunt) {
                     'app/pages/*.hbs',
                     'app/css/{,*/}*.css',
                     'app/src/sass/{,*/}*.{scss,sass}',
-                    'app/src/coffee/{,*/}*.coffee',
                     'app/js/{,*/}*.js',
                     'app/img/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
                 ]
@@ -95,12 +90,6 @@ module.exports = function (grunt) {
                 }]
             }
         },
-        concurrent: {
-            server: [
-                'coffee:server',
-                'compass:server'
-            ]
-        },
         copy: {
             dist: {
                 files: [{
@@ -146,22 +135,6 @@ module.exports = function (grunt) {
                 }
             }
         },
-        coffee: {
-            options: {
-                sourceMap: false,
-                sourceRoot: ''
-            },
-            dist: {},
-            server: {
-                files: [{
-                    expand: true,
-                    cwd: 'app/src/coffee',
-                    src: '{,*/}*.coffee',
-                    dest: 'app/js',
-                    ext: '.js'
-                }]
-            }
-        },
         uglify: {
             options: {
               mangle: true
@@ -190,7 +163,7 @@ module.exports = function (grunt) {
     grunt.registerTask('server', function (target) {
         grunt.task.run([
             'clean:server',
-            'concurrent:server',
+            'compass:server',
             'assemble',
             'connect:livereload',
             'open',
@@ -199,7 +172,7 @@ module.exports = function (grunt) {
     });
     grunt.registerTask('build', [
         'clean:dist',
-        'concurrent:server',
+        'compass:server',
         'uglify:server',
         'copy:styles',
         'copy:javascripts',
