@@ -9,8 +9,6 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="components/normalize-css/normalize.css">
         <link rel="stylesheet" href="css/application.css">
@@ -18,23 +16,80 @@
         <script src="components/modernizr/modernizr.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
         <div class="all-wrapper">
             <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="eightcol">
+                            <a href="/">
+                                <h1 id="logo">Redlight</h1>
+                            </a>
+                            <nav class="desktop">
+                                <ul>
+                                    <li>Home</li>
+                                    <li>Products</li>
+                                    <li>About</li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="fourcol last">
+                            <ul>
+                                <li title="search"><i class="icon-search"></i></li>
+                                <li title="basket"><i class="icon-cart"></i></li>
+                                <li title="menu" class="mobile"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </header>
-            <div class="main">
+            <div class="container" role="main">
                 {{> body }}
             </div>
             <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="fourcol">
+                            <h2>Redlight</h2>
+                            <p>Lorem break it down dolor sit amizzle, i'm in the shizzle adipiscing elit. Nullam sapizzle velizzle, aliquet volutpizzle, suscipit quis, gravida vizzle, arcu. Pellentesque bling bling pimpin'.</p>
+                        </div>
+                        <div class="fourcol">
+                            <h2>Navigation</h2>
+                            <ul>
+                                <li>Home</li>
+                                <li>Products</li>
+                                <li>About</li>
+                                <li>Terms &amp; conditions</li>
+                                <li>Privacy policy</li>
+                            </ul>
+                        </div>
+                        <div class="fourcol last">
+                            <h2>Contact information</h2>
+                            Redlight Ltd.
+                            <br>
+                            24 Bixton Street
+                            <br>
+                            London, UK
+                            <br><br>
+                            01225 764512
+                            <br>
+                            hello@redlighttheme.com
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="sixcol">
+                            Redlight theme © Copyright 2014 Tom Dallimore. Licenced under the MIT licence.
+                        </div>
+                        <div class="sixcol last">
+                            VAT number: 000 1234 56
+                        </div>
+                    </div>
+                </div>
             </footer>
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="components/jquery/dist/jquery.js"><\/script>')</script>
         <script src="js/application.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
