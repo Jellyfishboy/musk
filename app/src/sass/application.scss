@@ -1,7 +1,11 @@
 @import "compass/css3";
 
+$shared-layout:smart;
+@import "shared/*.png";
+
 $blue: #00aff1;
 $light-grey: #FAFAFA;
+$grey: #E6E6E5;
 $dark-grey: #444444;
 
 @import "base";
@@ -10,3 +14,8 @@ $dark-grey: #444444;
 @import "footer";
 @import "form";
 @import "button";
+@import "sprite";
+
+
+@import "retina";
+@import "responsive";

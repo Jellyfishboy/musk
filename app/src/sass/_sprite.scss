@@ -1,0 +1,7 @@
+.shared-basket { @include shared-sprite(basket); }
+
+.shared-search-off { @include shared-sprite(searchoff); }
+.shared-search-on { @include shared-sprite(searchon); }
+.shared-basket-off { @include shared-sprite(basketoff); }
+.shared-menu-off { @include shared-sprite(menuoff); }
+.shared-menu-on { @include shared-sprite(menuon); }

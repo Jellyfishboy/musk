@@ -1,44 +1,55 @@
-footer {
+footer 
+{
     background-color: $light-grey;
     height:310px;
+    padding:0 0 35px;
 
-    .container {
+    .container 
+    {
 
-        .row {
+        .row 
+        {
 
-            .fourcol {
+            .fourcol 
+            {
 
-                h2 {
-                    margin-top: 35px;
+                h2 
+                {
+                    margin-top:35px;
                 }
             }
 
-            .last {
+            .last 
+            {
 
-                ul {
+                ul 
+                {
                     font-size:18px;
                     margin:25px 0 0;
 
-                    li {
+                    li 
+                    {
                         display: inline-block;
-                        margin-right: 10px;
+                        margin: 0 10px 10px 0;
 
-                        &:last-child {
-                            margin-right: 0;
+                        &:last-child 
+                        {
+                            margin: 0 0 10px 0;
                         }
-                        i {
-                            @include transition-property(color);
-                            @include transition-duration(0.3s);
-                            @include transition-timing-function(ease-in);
+                        i 
+                        {
+                            @extend .hover-color;
 
-                            &:hover {
+                            &:hover 
+                            {
                                 color: $blue;
                             }
                         }
                     }
                 }
 
-                input[type=text] {
+                input[type=text] 
+                {
                     margin-right: 7px;
                 }
             }

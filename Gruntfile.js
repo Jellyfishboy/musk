@@ -126,12 +126,16 @@ module.exports = function (grunt) {
             options: {
                 sassDir: 'app/src/sass',
                 cssDir: 'app/css',
+                imagesDir: 'app/img',
+                httpGeneratedImagesPath: '/img'
+            },
+            dist: {
                 outputStyle: 'compressed'
             },
-            dist: {},
             server: {
                 options: {
-                    debugInfo: true
+                    debugInfo: true,
+                    outputStyle: 'nested'
                 }
             }
         },

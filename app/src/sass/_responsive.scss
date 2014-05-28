@@ -1,0 +1,43 @@
+@media handheld, only screen and (max-width: 954px) 
+{
+    body 
+    {
+        footer 
+        {
+            input[type=submit]
+            {
+                margin-top:10px;
+            }
+        }
+    }
+}
+@media handheld, only screen and (max-width: 767px) 
+{
+    body 
+    {
+        .desktop 
+        {
+            display: none;
+        }
+        .mobile
+        {
+            display: block !important;
+        }
+        footer 
+        {
+            height:100%;
+
+            input[type=submit]
+            {
+                margin-top:0;
+            }
+        }
+    }
+}
+@media handheld, only screen and (max-width: 430px) 
+{
+    body 
+    {
+
+    }
+}
