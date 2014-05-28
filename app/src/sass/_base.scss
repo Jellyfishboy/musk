@@ -1,0 +1,35 @@
+*, *:before, *:after {
+    @include box-sizing(border-box);
+    -webkit-font-smoothing: antialiased;
+}
+html, body {
+    font-size:100%;
+}
+body {
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: $dark-grey;
+    line-height: 1.65em;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+h2 {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    font-size:14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+p {
+    margin:0 0 10px;
+}
+ul {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+a {
+    text-decoration: none;
+    color: $dark-grey;
+}

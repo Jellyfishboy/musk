@@ -1,0 +1,19 @@
+.btn {
+    color:#fff;
+    font-weight: bold;
+    display: inline-block;
+    white-space: nowrap;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: 0;
+    border:1px solid #29ABE2;
+    text-align: center;
+    background-color: $blue;
+    padding:6px 16px;
+    height:33px;
+    @include border-radius(3px);
+    letter-spacing: 2px;
+}

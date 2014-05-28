@@ -1,0 +1,47 @@
+footer {
+    background-color: $light-grey;
+    height:310px;
+
+    .container {
+
+        .row {
+
+            .fourcol {
+
+                h2 {
+                    margin-top: 35px;
+                }
+            }
+
+            .last {
+
+                ul {
+                    font-size:18px;
+                    margin:25px 0 0;
+
+                    li {
+                        display: inline-block;
+                        margin-right: 10px;
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        i {
+                            @include transition-property(color);
+                            @include transition-duration(0.3s);
+                            @include transition-timing-function(ease-in);
+
+                            &:hover {
+                                color: $blue;
+                            }
+                        }
+                    }
+                }
+
+                input[type=text] {
+                    margin-right: 7px;
+                }
+            }
+        }
+    }
+}

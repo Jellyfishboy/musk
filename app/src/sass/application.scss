@@ -1,6 +1,12 @@
 @import "compass/css3";
 
+$blue: #00aff1;
+$light-grey: #FAFAFA;
+$dark-grey: #444444;
+
 @import "base";
 @import "grid";
 @import "header";
 @import "footer";
+@import "form";
+@import "button";
