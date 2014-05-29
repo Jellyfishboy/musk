@@ -7,6 +7,16 @@ header
     position:fixed;
     width:100%;
 
+    &.search-active {
+
+        nav {
+            display: none;
+        }
+        form#search {
+            display: block !important;
+        }
+    }
+
     .container 
     {
 
@@ -15,53 +25,111 @@ header
             overflow: visible;
             .twelvecol 
             {
+                position: relative;
 
                 #logo 
                 {
                     float:left;
+
+                    h1 {
+                        font-family: 'Pacifico', cursive;
+                    }
                 }
                 nav 
                 {
+                    position: relative;
                     float:left;
-                    padding-left: 30px;
+                    padding-left: 20px;
 
                         ul 
                         {
                             height:50px;
-                            padding:15px 0;
+                            overflow: hidden;
 
                             li 
                             {
-                                display: inline-block;
+                                float: left;
                                 vertical-align: middle;
                                 text-transform: uppercase;
                                 font-weight: bold;
-                                margin-right:30px;
+                                padding:25px 15px 0 15px;
                                 font-family: 'Lato', sans-serif;
                                 position: relative;
 
                                 &:last-child 
                                 {
-                                    padding:0;
-                                }
-                                &.active:after, &:hover:after 
-                                {
-                                    content: "";
-                                    border-top:4px solid $blue;
-                                    position: absolute;
-                                    bottom:-30px;
-                                    left:-3px;
-                                    width:100%;
-                                    padding:0 6px 0 0;
-                                    @include box-sizing(initial);
+                                    padding:25px 0 0 15px;
                                 }
                             }
                         }
+                        #spot {
+                            content: "";
+                            position: absolute;
+                            top:10px;
+                            width:12px;
+                            height:12px;
+                            @include border-radius(12px);
+                            background-color: $blue;
+                        }
+                }
+
+                form#search
+                {
+                    overflow:hidden;
+                    text-align: center;
+                    height:40px;
+                    position: relative;
+                    margin-left:2px;
+                    display: none;
+                    padding:5px 0;
+                    @include box-sizing(initial);
+
+                    div 
+                    {
+                        position: relative;
+                        width:85%;
+                        margin:0 auto;
+
+                        input[type="text"]
+                        {
+                            width:100%;
+                            height: 40px;
+                            background: transparent;
+                            border:0;
+                            border-bottom:1px solid $dark-grey;
+                            padding:2px 10px;
+                            line-height:30px;
+                            font-size: 30px;
+                            @include border-radius(0px);
+                        }
+                        &:before, &:after 
+                        {
+                            content: "";
+                            bottom:0;
+                            height:7px;
+                            position: absolute;
+                        }
+                        &:before 
+                        {
+                            left:0;
+                            border-left:1px solid $dark-grey;
+                        }
+                        &:after
+                        {
+                            right:0;
+                            border-right:1px solid $dark-grey;
+                        }
+                    }
+                    input[type="submit"]
+                    {
+                        display: none;
+                    }
                 }
 
                 ul#quick-bar 
                 {
                     position: relative;
+                    float:right;
                     li 
                     {
                         height:50px;
@@ -100,6 +168,7 @@ header
                                 @include border-radius(16px);
                                 color:#fff;
                                 line-height: 2em;
+                                font-weight: bold;
                             }
                             &.active 
                             {

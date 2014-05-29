@@ -34,6 +34,28 @@
         }
     }
 }
+@media handheld, only screen and (max-width: 685px) 
+{
+    body 
+    {
+        header.search-active 
+        {
+            a#logo
+            {
+                display: none;
+            }
+            form#search 
+            {
+
+                div 
+                {
+                    margin:0 !important;
+                    width:95% !important;
+                }
+            }
+        }
+    }
+}
 @media handheld, only screen and (max-width: 430px) 
 {
     body 

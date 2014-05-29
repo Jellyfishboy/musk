@@ -10,6 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="components/normalize-css/normalize.css">
         <link rel="stylesheet" href="css/application.css">
         <link rel="stylesheet" href="components/icomoon/style.css">
@@ -22,7 +23,7 @@
                     <div class="row">
                         <div class="twelvecol">
                             <a href="/" id="logo">
-                                <h1></h1>
+                                <h1>Redlight</h1>
                             </a>
                             <nav class="desktop">
                                 <ul>
@@ -32,8 +33,8 @@
                                     <li><a href="#">Bags</a></li>
                                     <li><a href="#">Accessories</a></li>
                                     <li><a href="#">New</a></li>
-
                                 </ul>
+                                <div id="spot"></div>
                             </nav>
                             <ul id="quick-bar">
                                 <li title="basket" class="active">
@@ -42,6 +43,12 @@
                                 <li title="menu" class="mobile"></li>
                                 <li title="search"></li>
                             </ul>
+                            <form action="#" role="form" id="search">
+                                <div>
+                                    <input type="text" class="form-control" placeholder="search our products...">
+                                </div>
+                                <input type="submit">
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -124,6 +131,7 @@
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="components/jquery/dist/jquery.js"><\/script>')</script>
+        <script src="components/jquery-hoverIntent/jquery.hoverIntent.js"></script>
         <script src="js/application.js"></script>
 
         <script>
