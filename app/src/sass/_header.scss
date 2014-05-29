@@ -6,15 +6,26 @@ header
     overflow:hidden;
     position:fixed;
     width:100%;
+    @include transition-property(height);
+    @include transition-duration(0.4s);
+    @include transition-timing-function(ease-in);
 
-    &.search-active {
+    &.search-active 
+    {
 
-        nav {
+        nav 
+        {
             display: none;
         }
-        form#search {
+        form#search 
+        {
             display: block !important;
         }
+    }
+
+    &.menu-active
+    {
+        height:300px;
     }
 
     .container 

@@ -3,12 +3,13 @@
 (function() 
 {
 
-    var menuSelector, calculateOffset, displaySearchbar;
+    var menuSelector, calculateOffset, displaySearchbar, displayMobileMenu;
 
     $(document).ready(function()
     {
         menuSelector();
         displaySearchbar();
+        displayMobileMenu();
     });
 
     menuSelector = function() 
@@ -48,8 +49,22 @@
 
     displaySearchbar = function()
     {
-        $('li[title="search"]').click(function() {
+        $('li[title="search"]').click(function() 
+        {
             $('header').toggleClass('search-active');
+            $('li[title="menu"').removeClass('active');
+            $('header').removeClass('menu-active');
+            $(this).toggleClass('active');
+        });
+    };
+
+    displayMobileMenu = function ()
+    {
+        $('li[title="menu"]').click(function()
+        {
+            $('header').toggleClass('menu-active');
+            $('li[title="search"]').removeClass('active');
+            $('header').removeClass('search-active');
             $(this).toggleClass('active');
         });
     };
