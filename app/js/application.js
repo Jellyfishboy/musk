@@ -61,7 +61,7 @@
         $('li[title="search"]').click(function() 
         {
             $('body').toggleClass('search-active');
-            $('li[title="menu"').removeClass('active');
+            $('li[title="menu"]').removeClass('active');
             $('.menu-active header').css('height', 80);
             $('body').removeClass('menu-active');
             $(this).toggleClass('active');
