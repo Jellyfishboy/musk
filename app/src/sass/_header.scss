@@ -25,7 +25,7 @@ header
 
     &.menu-active
     {
-        height:300px;
+        height:420px;
     }
 
     .container 
@@ -155,7 +155,7 @@ header
                         {
                             @extend .shared-search-off;
 
-                            &:hover, &.active 
+                            &.active 
                             {
                                 @extend .shared-search-on;
                             }
@@ -195,13 +195,44 @@ header
                         {
                             @extend .shared-menu-off;
 
-                            &:hover, &.active 
+                            &.active 
                             {
                                 @extend .shared-menu-on;
                             }
                         }
                     }
                 }
+            }
+        }
+    }
+    ul.mobile
+    {
+        position: absolute;
+        top:65px;
+        width: 100%;
+
+        li
+        {
+            padding:35px 0 0;     
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: 'Lato', sans-serif;
+            position: relative;
+            width:140px;
+            margin:0 auto;
+
+            &.active:before 
+            {
+                content: "";
+                height:12px;
+                width:12px;
+                background-color: $blue;
+                position:absolute;
+                @include border-radius(12px);
+                position: absolute;
+                top: 19px;
+                left: 64px;
             }
         }
     }
