@@ -27,7 +27,7 @@
         {
             height:100%;
 
-            input[type=submit]
+            input[type="submit"]
             {
                 margin-top:0;
             }
@@ -38,7 +38,7 @@
 {
     body 
     {
-        header.search-active 
+        &.search-active 
         {
             a#logo
             {
@@ -46,6 +46,7 @@
             }
             form#search 
             {
+                margin-left:0 !important;
 
                 div 
                 {

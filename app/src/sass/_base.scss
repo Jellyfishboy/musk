@@ -18,6 +18,24 @@ body
     font-size: 12px;
     letter-spacing: 1px;
     margin:0;
+
+    &.search-active 
+    {
+
+        nav 
+        {
+            display: none;
+        }
+        form#search 
+        {
+            display: block !important;
+        }
+    }
+
+    &.menu-active
+    {
+        overflow: hidden;
+    }
 }
 h2 
 {

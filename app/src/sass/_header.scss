@@ -10,24 +10,6 @@ header
     @include transition-duration(0.4s);
     @include transition-timing-function(ease-in);
 
-    &.search-active 
-    {
-
-        nav 
-        {
-            display: none;
-        }
-        form#search 
-        {
-            display: block !important;
-        }
-    }
-
-    &.menu-active
-    {
-        height:420px;
-    }
-
     .container 
     {
 
@@ -210,6 +192,7 @@ header
         position: absolute;
         top:65px;
         width: 100%;
+        padding-bottom:20px;
 
         li
         {
