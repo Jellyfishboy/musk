@@ -59,6 +59,14 @@ a
 {
     text-decoration: none;
     color: $dark-grey;
+    @include transition-property(color);
+    @include transition-duration(0.4s);
+    @include transition-timing-function(linear);
+
+    &:hover 
+    {
+        color: $blue;
+    }
 }
 .desktop 
 {
@@ -70,7 +78,7 @@ a
 }
 [role="main"] 
 {
-    padding: 110px 30px 30px;
+    padding: 90px 30px 30px;
 }
 .hover-color 
 {
