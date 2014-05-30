@@ -72,8 +72,6 @@ module.exports = function (grunt) {
                     dot: true,
                     src: [
                         '<%= soca.app %>/css',
-                        '<%= soca.app %>/js/application.js',
-                        '<%= soca.app %>/js/application.js.map',
                         '<%= soca.dist %>/*',
                         '!<%= soca.dist %>/.git*'
                     ]
@@ -83,8 +81,6 @@ module.exports = function (grunt) {
                 files: [{
                     src: [
                         '<%= soca.app %>/css',
-                        '<%= soca.app %>/js/application.js',
-                        '<%= soca.app %>/js/application.js.map',
                         '<%= soca.dist %>/*'
                     ]
                 }]
