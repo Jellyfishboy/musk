@@ -1,25 +1,38 @@
 <div class="row">
     {{!
-        Filter options
-    }}
-    <section id="sidebar" class="threecol">
-
-    </section>
-    {{!
         Search results
     }}
-    <section id="content" class="ninecol last">
+    <section id="content" class="twelvecol">
+        <div class="row">
+            <div class="twelvecol">
+                <h2>Search</h2>
+            </div>
+        </div>
         <div class="row">
             {{!
-                Search header
+                Query
             }}
             <div class="fourcol">
+                <div>Search results for "<b>12v power</b>"</div>
             </div>
             {{!
-                Select sort by
+                Result count
             }}
-            <div class="fivecol last">
-
+            <div class="fourcol">
+                <div><b>28</b> results found</div>
+            </div>
+            {{!
+                Sort by
+            }}
+            <div class="fourcol last">
+            <select id="isotopeSorting" class="form-control">
+                    <option value="{&quot;sortBy&quot;:&quot;price&quot;, &quot;sortAscending&quot;:&quot;true&quot;}">By Price (Low to High) ↑</option>
+                    <option value="{&quot;sortBy&quot;:&quot;price&quot;, &quot;sortAscending&quot;:&quot;false&quot;}">By Price (High to Low) ↓</option>
+                    <option value="{&quot;sortBy&quot;:&quot;name&quot;, &quot;sortAscending&quot;:&quot;true&quot;}">By Name (Low to High) ↑</option>
+                    <option value="{&quot;sortBy&quot;:&quot;name&quot;, &quot;sortAscending&quot;:&quot;false&quot;}">By Name (High to Low) ↓</option>
+                    <option value="{&quot;sortBy&quot;:&quot;popularity&quot;, &quot;sortAscending&quot;:&quot;true&quot;}">By Popularity (Low to High) ↑</option>
+                    <option value="{&quot;sortBy&quot;:&quot;popularity&quot;, &quot;sortAscending&quot;:&quot;false&quot;}">By Popularity (High to Low) ↓</option>
+                </select>
             </div>
         </div>
         {{! 
@@ -29,36 +42,50 @@
             <div class="threecol">
                 <div class="single-product">
                     <img src="http://placehold.it/250x250"/>
-                    <h2>Product name</h2>
-                    <h3>£90.23</h3>
+                    <h3>Product name</h3>
+                    <h4>from £90.23</h4>
                 </div>
             </div>
             <div class="threecol">
                 <div class="single-product">
                     <img src="http://placehold.it/250x250"/>
-                    <h2>Product name</h2>
-                    <h3>£90.23</h3>
+                    <h3>12v power supply</h3>
+                    <h4>£90.23</h4>
                 </div>
             </div>
             <div class="threecol">
                 <div class="single-product">
                     <img src="http://placehold.it/250x250"/>
-                    <h2>Product name</h2>
-                    <h3>£90.23</h3>
+                    <h3>Product name</h3>
+                    <h4>£90.23</h4>
                 </div>
             </div>
             <div class="threecol">
                 <div class="single-product">
                     <img src="http://placehold.it/250x250"/>
-                    <h2>Product name</h2>
-                    <h3>£90.23</h3>
+                    <h3>Product name</h3>
+                    <h4>£90.23</h4>
                 </div>
             </div>
             <div class="threecol">
                 <div class="single-product">
                     <img src="http://placehold.it/250x250"/>
-                    <h2>Product name</h2>
-                    <h3>£90.23</h3>
+                    <h3>Product name</h3>
+                    <h4>£90.23</h4>
+                </div>
+            </div>
+            <div class="threecol">
+                <div class="single-product">
+                    <img src="http://placehold.it/250x250"/>
+                    <h3>Product name</h3>
+                    <h4>£90.23</h4>
+                </div>
+            </div>
+            <div class="threecol">
+                <div class="single-product">
+                    <img src="http://placehold.it/250x250"/>
+                    <h3>Product name</h3>
+                    <h4>£90.23</h4>
                 </div>
             </div>
         </div>

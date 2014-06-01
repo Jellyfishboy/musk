@@ -10,6 +10,7 @@ html, body
 }
 body 
 {
+    // font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -44,6 +45,7 @@ h2
     font-size:14px;
     font-weight: bold;
     margin:0 0 20px;
+    text-transform: uppercase;
 }
 p 
 {

@@ -1,17 +1,18 @@
 form 
 {
 
-    .form-control 
-    {
-        height:33px;
-        display: inline-block;
-        width:215px;
-        padding:8px 10px;
-        vertical-align: middle;
-        background-color: #fff;
-        border:1px solid #ebebeb;
-        outline: 0;
-        @include border-radius(3px);
-        line-height: 1.428571429;
-    }
+    
+}
+.form-control 
+{
+    height:33px;
+    display: inline-block;
+    width:215px;
+    padding:8px 10px;
+    vertical-align: middle;
+    background-color: #fff;
+    border:1px solid #ebebeb;
+    outline: 0;
+    @include border-radius(3px);
+    line-height: 1.428571429;
 }

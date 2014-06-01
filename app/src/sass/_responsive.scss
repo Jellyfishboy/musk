@@ -32,6 +32,38 @@
                 margin-top:0;
             }
         }
+        section#content
+        {
+
+            .row 
+            {
+
+                .threecol
+                {
+                    text-align: center;
+                }
+                &:nth-child(2)
+                {
+
+                    .fourcol
+                    {
+
+                        &:nth-child(2)
+                        {
+                            margin-bottom: 7px;
+                        }
+                        &:not(.last) 
+                        {
+                            height:33px;
+                        }
+                    }
+                    select 
+                    {
+                        float:left;
+                    }
+                }
+            }
+        }
     }
 }
 @media handheld, only screen and (max-width: 685px) 
