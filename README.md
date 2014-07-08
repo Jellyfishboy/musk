@@ -48,7 +48,7 @@ This will run through compiling, uglifying, copying the HTML, JavaScript, CSS an
 [Icomoon](http://icomoon.io/) - Iconography     
 
 ##Copyright
-Copyright (c) 2014 [Tom Dallimore](http://www.tomdallimore.com) ([@billy_dallimore](http://twitter.com/billy_dallimore))  
+Copyright (c) 2014 [Tom Dallimore](http://www.tomdallimore.com) ([@tom_dallimore](http://twitter.com/tom_dallimore))  
 Licenced under the MIT licence.
 
 
