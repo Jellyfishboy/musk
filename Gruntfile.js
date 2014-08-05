@@ -174,6 +174,7 @@ module.exports = function (grunt) {
         'clean:dist',
         'compass:server',
         'uglify:server',
+        'assemble',
         'copy:styles',
         'copy:javascripts',
         'copy:dist'
