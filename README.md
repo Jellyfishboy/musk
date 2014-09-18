@@ -2,7 +2,7 @@
 
 #Musk
 
-Musk is a responsive e-commerce template built using Yeoman, Grunt, Bower, HTML5, CSS3 and Handlebar templating. It as an open source template for other developers to utilise in their applications.
+Musk is a responsive e-commerce template built using Yeoman, Grunt, Bower, HTML5, CSS3, JavaScript and Handlebar templating. It as an open source template for other developers to utilise in their applications.
 
 
 ##Getting started
